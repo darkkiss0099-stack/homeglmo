@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>WINTERFELL AWAKE 2K26</title>
+    <title>GLMOFUS STYLE 2K26</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
             font-family: 'Orbitron', sans-serif;
             color: white;
             height: 100vh;
-            overflow: hidden; /* ป้องกัน Scroll bar */
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -46,13 +46,12 @@
             background-image: url('https://img5.pic.in.th/file/secure-sv1/images0d14b02746fc2fd6.png');
             background-size: cover;
             background-position: center;
-            /* ทำให้ภาพเบลอตามที่ขอ */
             filter: blur(12px) brightness(0.6); 
-            transform: scale(1.1); /* ขยายเล็กน้อยเพื่อเวลาขยับขอบจะไม่ขาว */
-            transition: transform 0.1s ease-out; /* Smooth movement */
+            transform: scale(1.1);
+            transition: transform 0.1s ease-out;
         }
 
-        /* Grid Overlay เพื่อความเท่แบบ Sci-fi */
+        /* Grid Overlay */
         .grid-overlay {
             position: absolute;
             inset: 0;
@@ -147,24 +146,17 @@
         .h1-bottom {
             font-size: 9rem;
             color: #00c3ff;
-            /* สไตล์ตัวอักษรเจาะรู (Outline) แบบในรูป */
-            /* ถ้าอยากได้แบบทึบ ให้ลบ text-stroke ออก */
-            /* -webkit-text-stroke: 2px #00c3ff;
-            -webkit-text-fill-color: transparent; */
-            
-            /* แบบ Gradient ทึบ */
             background: linear-gradient(180deg, #50c9ff 0%, #006eff 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            
             margin-top: -10px;
         }
 
         .subtitle {
             margin-top: 20px;
             color: rgba(255, 255, 255, 0.6);
-            letter-spacing: 5px;
-            font-size: 0.9rem;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
         }
 
         /* ================= BUTTONS ================= */
@@ -176,7 +168,7 @@
         }
 
         .main-btn {
-            padding: 15px 40px;
+            padding: 15px 50px; /* เพิ่มความกว้างปุ่มนิดหน่อยเพราะเหลือปุ่มเดียว */
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
@@ -199,50 +191,11 @@
             border-color: #00c3ff;
         }
 
-        .btn-secondary {
-            background: transparent;
-            color: rgba(255, 255, 255, 0.7);
-        }
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            border-color: white;
-        }
-
-        /* ================= FOOTER / PARTNERS ================= */
-        .footer-bar {
-            position: absolute;
-            bottom: 40px;
-            width: 80%;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .partner-pill {
-            padding: 8px 20px;
-            background: rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 30px;
-            font-size: 0.7rem;
-            color: rgba(255, 255, 255, 0.5);
-            text-decoration: none;
-            transition: 0.3s;
-            letter-spacing: 1px;
-        }
-        .partner-pill:hover {
-            border-color: #00c3ff;
-            color: #00c3ff;
-            background: rgba(0, 195, 255, 0.1);
-        }
-
         /* Responsive */
         @media (max-width: 768px) {
             h1 { font-size: 3.5rem; }
             .h1-bottom { font-size: 4rem; }
             .navbar { padding: 10px 20px; }
-            .btn-group { flex-direction: column; gap: 10px; }
         }
     </style>
 </head>
@@ -255,45 +208,30 @@
     <div class="grid-overlay"></div>
 
     <nav class="navbar">
-        <div class="logo">588 AWAKE 2K26</div>
+        <div class="logo">GLMOFUSSTYLE 2K26</div>
         <a href="#" class="admin-btn">ADMIN</a>
     </nav>
 
     <main class="main-content">
-        <div class="badge">HOUSE OF 588</div>
+        <div class="badge">KING OF GLMOFUS</div>
         
         <div class="title-container">
-            <h1>WINTERFELL</h1>
-            <h1 class="h1-bottom">AWAKE</h1>
+            <h1>GLMOFUS</h1>
+            <h1 class="h1-bottom">STYLE</h1>
         </div>
 
-        <div class="subtitle">@REAL 2026 STAY ALONG 588</div>
+        <div class="subtitle">© 2026 Designed by MylistShop</div>
 
         <div class="btn-group">
-            <a href="#" class="main-btn btn-primary">WINTERFELL AWAKE</a>
-            <a href="#" class="main-btn btn-secondary">AWAKE STYLE</a>
+            <a href="#" class="main-btn btn-primary">GLMOFUSSTYLE</a>
         </div>
     </main>
 
-    <footer class="footer-bar">
-        <a href="#" class="partner-pill">PARTNER IN AWAKE 2K26</a>
-        <a href="#" class="partner-pill">SABUDBOB 588</a>
-        <a href="#" class="partner-pill">JUSTYOUKNOW</a>
-        <a href="#" class="partner-pill">TWENTY 4 CASH</a>
-        <a href="#" class="partner-pill">JustToy</a>
-        <a href="#" class="partner-pill">Jayblack</a>
-    </footer>
-
     <script>
-        // Code ส่วนการขยับเมาส์แล้วภาพพื้นหลังขยับ (Parallax)
         const bgImage = document.getElementById('bgImage');
-        
         document.addEventListener('mousemove', (e) => {
-            // หาตำแหน่งเมาส์เทียบกับจุดกึ่งกลางจอ
-            const x = (window.innerWidth / 2 - e.pageX) / 25; // หาร 25 เพื่อให้ขยับน้อยๆ นุ่มๆ
+            const x = (window.innerWidth / 2 - e.pageX) / 25;
             const y = (window.innerHeight / 2 - e.pageY) / 25;
-
-            // สั่งให้เลื่อนภาพ
             bgImage.style.transform = `scale(1.1) translate(${x}px, ${y}px)`;
         });
     </script>
